@@ -1,3 +1,3 @@
-public class ThirtySecCommand {
+public class ThirtySecCommand implements Command {
     
 }
