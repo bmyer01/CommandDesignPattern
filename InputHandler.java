@@ -5,9 +5,11 @@ import java.util.HashMap;
  */
 public class InputHandler {
     private HashMap<String, Command> commands;
-
+    private StopWatch Watch;
 
     public InputHandler(StopWatch Watch){
+        this.Watch = Watch;
+
         commands = new HashMap<String, Command>();
         commands.put("1", new OneMinCommand());
         commands.put("5", new FiveMinCommand());
@@ -16,6 +18,12 @@ public class InputHandler {
     }
 
     public boolean InputEntered(String data){
-
+        if(commands.containsKey(data)){
+            commands.get(data).execute();
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 }
