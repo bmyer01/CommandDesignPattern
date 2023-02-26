@@ -8,7 +8,7 @@ public class InputHandler {
 
     /**
      * A constuctor for an input handler
-     * @param Watch
+     * @param Watch shows the clock counting down
      */
     public InputHandler(StopWatch Watch) {
         commands = new HashMap<String, Command>();
@@ -21,7 +21,7 @@ public class InputHandler {
     /**
      * A method that returns a boolean value based on whether the input 
      * entered is correct
-     * @param data
+     * @param data is the value inputed
      * @return a boolean value based on whether the input is correct
      */
     public boolean inputEntered(String data){

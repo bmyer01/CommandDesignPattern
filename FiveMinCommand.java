@@ -7,7 +7,7 @@ public class FiveMinCommand implements Command {
 
     /**
      * a constructor for a five minute command
-     * @param watch
+     * @param watch is going to display time
      */
     public FiveMinCommand(StopWatch watch) {
         this.watch = watch;
