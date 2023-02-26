@@ -5,15 +5,12 @@ import java.util.HashMap;
  */
 public class InputHandler {
     private HashMap<String, Command> commands;
-    private StopWatch Watch;
 
     /**
      * A constuctor for an input handler
      * @param Watch
      */
     public InputHandler(StopWatch Watch) {
-        this.Watch = Watch;
-
         commands = new HashMap<String, Command>();
         commands.put("1", new OneMinCommand(Watch));
         commands.put("5", new FiveMinCommand(Watch));
