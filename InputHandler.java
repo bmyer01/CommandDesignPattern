@@ -7,17 +7,27 @@ public class InputHandler {
     private HashMap<String, Command> commands;
     private StopWatch Watch;
 
+    /**
+     * A constuctor for an input handler
+     * @param Watch
+     */
     public InputHandler(StopWatch Watch){
         this.Watch = Watch;
 
         commands = new HashMap<String, Command>();
-        commands.put("1", new OneMinCommand());
-        commands.put("5", new FiveMinCommand());
-        commands.put("30",new ThirtySecCommand());
+        commands.put("1", new OneMinCommand(Watch));
+        commands.put("5", new FiveMinCommand(Watch));
+        commands.put("30",new ThirtySecCommand(Watch));
 
     }
 
-    public boolean InputEntered(String data){
+    /**
+     * A method that returns a boolean value based on whether the input 
+     * entered is correct
+     * @param data
+     * @return a boolean value based on whether the input is correct
+     */
+    public boolean inputEntered(String data){
         if(commands.containsKey(data)){
             commands.get(data).execute();
             return true;
