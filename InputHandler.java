@@ -11,7 +11,7 @@ public class InputHandler {
      * A constuctor for an input handler
      * @param Watch
      */
-    public InputHandler(StopWatch Watch){
+    public InputHandler(StopWatch Watch) {
         this.Watch = Watch;
 
         commands = new HashMap<String, Command>();
@@ -32,7 +32,7 @@ public class InputHandler {
             commands.get(data).execute();
             return true;
         }
-        else{
+        else {
             return false;
         }
     }

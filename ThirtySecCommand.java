@@ -1,4 +1,4 @@
-public class ThirtySecCommand implements Command{
+public class ThirtySecCommand implements Command {
      /**
      * @author Bella Myer
      */

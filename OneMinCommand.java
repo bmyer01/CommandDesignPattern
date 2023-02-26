@@ -1,4 +1,4 @@
-public class OneMinCommand implements Command{
+public class OneMinCommand implements Command {
     /**
      * @author Bella Myer
      */

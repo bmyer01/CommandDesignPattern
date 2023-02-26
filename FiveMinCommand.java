@@ -1,4 +1,4 @@
-public class FiveMinCommand implements Command{
+public class FiveMinCommand implements Command {
      /**
       * a representation of a five minute timer on a watch
      * @author Bella Myer
