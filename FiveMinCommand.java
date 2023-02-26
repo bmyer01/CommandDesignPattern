@@ -1,3 +1,3 @@
-public class FiveMinCommand {
+public class FiveMinCommand implements Command{
     
 }

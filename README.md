@@ -1,2 +1,0 @@
-# CommandDesignPattern
-Group Design Pattern
